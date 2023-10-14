@@ -1,0 +1,35 @@
+---
+title: "R example using Notebook"
+output: html_notebook
+---
+
+**Introduction**
+
+The iris dataset is built-in
+
+1.  the firest exampel
+
+2.  hello
+
+```{r}
+str(iris)
+```
+
+here is the structure of the iris dataset as following:
+
+```{r}
+head(iris, 3)
+```
+
+```{r}
+#Scatter Plot
+with(iris, plot(Sepal.Length, Sepal.Width, col = Species, pch = as.numeric(Species)))
+
+```
+
+```{r}
+library(scatterplot3d)
+scatterplot3d(iris$Petal.Width, iris$Sepal.Length, iris$Sepal.Width)
+```
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
